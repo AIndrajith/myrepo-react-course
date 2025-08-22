@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { MainApp } from "./styled.js";
 
 const App = () => {
   const storageKeyName = "awesomeApp";
@@ -13,14 +14,14 @@ const App = () => {
   },[count]);
 
   return (
-    <div>
+    <MainApp>
       Hello World!
 
       <button onClick={() => addCount(count)}>
         Count is {count}
       </button>
 
-    </div>
+    </MainApp>
   )
 }
 
